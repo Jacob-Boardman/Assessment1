@@ -1,0 +1,22 @@
+package com.qa.Assessment;
+
+import java.util.Scanner;
+
+public class Runner {
+
+	public static void main(String[] args) 
+	{
+		String input = "";
+		System.out.println("");
+		
+        Scanner sc = new Scanner(System.in);
+        System.out.println(input);
+        
+        Person player = new Person(input, 10);
+        
+        input = sc.next();
+        
+        System.out.println(input);
+
+	}
+}

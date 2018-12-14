@@ -1,0 +1,26 @@
+package com.qa.Assessment;
+
+public class Compass 
+{
+	int trPosition;
+	private double distance;
+	
+	Compass (int trPosition)
+	{
+		if(this.trPosition > 5)
+		{
+			this.trPosition = trPosition;
+		}
+		else
+		{
+			this.trPosition = -trPosition;
+		}
+		this.trPosition = trPosition;
+	}
+	
+	public void distanceAway(int pPosition)
+	{
+		distance = trPosition - pPosition;
+		System.out.println("You are " + distance + "m away");
+	}
+}

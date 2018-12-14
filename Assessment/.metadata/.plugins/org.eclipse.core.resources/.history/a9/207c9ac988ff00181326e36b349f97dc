@@ -1,0 +1,7 @@
+package com.qa.Assessment;
+
+public class Treasure 
+{
+	private String startingLocation;
+
+}

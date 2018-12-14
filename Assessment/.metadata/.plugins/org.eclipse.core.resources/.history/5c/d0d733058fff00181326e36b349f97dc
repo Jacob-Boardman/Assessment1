@@ -1,0 +1,19 @@
+package com.qa.Assessment;
+
+public class Compass 
+{
+	private String north;
+	private String east;
+	private String south;
+	private String west;
+	
+	private double distance;
+	
+	Treasure tr = new Treasure();
+	
+	public void distanceAway(int pPosition)
+	{
+		distance = tr.getStartingLocation() - pPosition;
+		System.out.println("You are " + distance + "m away");
+	}
+}

@@ -1,0 +1,39 @@
+package com.qa.Assessment;
+
+public class Compass 
+{
+	int trPosition;
+	private double distance;
+	
+	Compass(){}
+	
+	Compass (int treasurePosition)
+	{
+		if(this.trPosition > 5)
+		{
+			this.trPosition = treasurePosition;
+		}
+		else
+		{
+			this.trPosition = -treasurePosition;
+		}
+		this.trPosition = treasurePosition;
+	}
+	
+	public void distanceAway(int pPosition)
+	{
+		System.out.println(pPosition + " passed player pos");
+		System.out.println(distance + " comp distance");
+		System.out.println(trPosition + " treasure pos");
+		distance = trPosition - pPosition;
+		System.out.println("You are " + distance + "m away");
+	}
+
+	public int getTrPosition() {
+		return trPosition;
+	}
+
+	public void setTrPosition(int trPosition) {
+		this.trPosition = trPosition;
+	}
+}

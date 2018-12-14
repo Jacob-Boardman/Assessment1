@@ -1,0 +1,47 @@
+package com.qa.Assessment;
+
+public class Treasure 
+{
+	private int setXLocation;
+	private int setYLocation;
+	private int startingXLocation;
+	private int startingYLocation;
+	
+	Treasure(){}
+	
+	Treasure(int setXLocation, int setYLocation)
+	{	
+		if(setLocation < 4)
+		{
+			this.startingLocation = (-setLocation) -3; 
+		}
+		else
+		{
+			this.startingLocation = setLocation;
+		}
+	}
+
+	public int getSetLocation() {
+		return setLocation;
+	}
+
+	public void setSetLocation(int setLocation) {
+		this.setLocation = setLocation;
+	}
+
+	public int getStartingYLocation() {
+		return startingYLocation;
+	}
+
+	public void setStartingYLocation(int startingYLocation) {
+		this.startingYLocation = startingYLocation;
+	}
+
+	public int getStartingXLocation() {
+		return startingXLocation;
+	}
+
+	public void setStartingXLocation(int startingXLocation) {
+		this.startingXLocation = startingXLocation;
+	}
+}

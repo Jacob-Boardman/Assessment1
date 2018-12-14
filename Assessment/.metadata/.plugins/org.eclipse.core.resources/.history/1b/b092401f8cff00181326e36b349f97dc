@@ -1,0 +1,17 @@
+package com.qa.Assessment;
+
+public class Compass 
+{
+	private String north;
+	private String east;
+	private String south;
+	private String west;
+	
+	private double distance;
+	
+	
+	public void distanceAway()
+	{
+		
+	}
+}

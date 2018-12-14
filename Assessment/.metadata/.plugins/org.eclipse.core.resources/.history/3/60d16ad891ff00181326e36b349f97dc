@@ -1,0 +1,32 @@
+package com.qa.Assessment;
+
+import java.util.Scanner;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		String input = "";
+		int random = (int) ((Math.random()*10));
+		Treasure treasure = new Treasure(random);
+		Compass compass = new Compass(random);
+		System.out.println(treasure.getStartingLocation());
+		System.out.println(compass.getTrPosition());
+		
+		Person player = new Person(input, 10);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println(
+				"You've been exploring for a while now and find yourself in snow covered forest, this gilstening sunrays peeking through the tree tops.");
+		System.out.println(
+				"You know you are close to finding Santas workshop you rummage around in your back back and find your magic compass.");
+		System.out.println("The compass guides you when you are close");
+		System.out.println("Try moving North, East, South or West");
+		//System.out.println("You can also take Actions (a):");
+
+		do {
+			input = sc.next();
+			player.action(input);
+		} while (!player.isFoundTreasure());
+
+	}
+}

@@ -1,0 +1,22 @@
+package com.qa.Assessment;
+
+public class Treasure 
+{
+	private int setLocation;
+	private int startingLocation;
+	
+	Treasure(){}
+	
+	Treasure(int setLocation)
+	{
+		System.out.println(setLoaction);
+		if(setLocation < 3)
+		{
+			
+		}
+		else if (setLocation >=3 && setLocation < 5)
+		{
+			startingLocation = 0;
+		}
+	}
+}

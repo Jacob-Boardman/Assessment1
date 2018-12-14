@@ -1,0 +1,25 @@
+package com.qa.Assessment;
+
+import java.util.Scanner;
+
+public class Runner {
+
+	public static void main(String[] args) 
+	{
+		String input = "";
+		Person player = new Person(input, 10, );
+		
+		System.out.println("You've been exploring for a while now and find yourself in snow covered forest, this gilstening sunrays peeking through the tree tops.");
+		System.out.println("You know you are close to finding Santas workshop you rummage around in your back back and find your magic compass.");
+		System.out.println("The compass guides you when you are close");
+		
+        Scanner sc = new Scanner(System.in);
+        input = sc.next();
+        player.action(input);
+        
+        
+        
+        
+
+	}
+}

@@ -1,0 +1,18 @@
+package com.qa.Assessment;
+
+public class Compass 
+{
+	private String north;
+	private String east;
+	private String south;
+	private String west;
+	
+	private double distance;
+	
+	//Person player = new Person();
+	
+	public void distanceAway(int position)
+	{
+		
+	}
+}

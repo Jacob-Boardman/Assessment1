@@ -1,0 +1,79 @@
+package com.qa.Assessment;
+
+import java.util.Scanner;
+
+public class Person 
+{
+	private String name;
+	private String movement;
+	private int position = 0;
+	private int hp;
+	private Scanner sc = new Scanner(System.in);
+	private String input;
+	private boolean foundTreasure;
+	private Compass cp = new Compass();
+	
+	Person(){}
+	
+	Person(String movment, int hp)
+	{
+		System.out.println("Enter your Player name");
+		this.name = sc.next();
+		this.movement = movment;
+		this.hp = hp;
+	}
+	
+	public void action(String movment)
+	{
+		if(movment.equals("n") || movment.equals("N") || movment.equals("North") || movment.equals("north"))
+		{
+			System.out.println("You have moved North");
+			cp.distanceAway(position);
+			setPosition(getPosition() + 2);			
+		}
+		else if(movment.equals("e") || movment.equals("E") || movment.equals("East") || movment.equals("east"))
+		{
+			System.out.println("You have moved East");
+			setPosition(getPosition() + 1);
+		}
+		else if(movment.equals("s") || movment.equals("S") || movment.equals("South") || movment.equals("south"))
+		{
+			System.out.println("You have moved South");
+			setPosition(getPosition() - 2);
+		}
+		else if(movment.equals("w") || movment.equals("w") || movment.equals("West") || movment.equals("west"))
+		{
+			System.out.println("You have moved West");
+			setPosition(getPosition() - 1);
+		}
+/*		else if(movment.equals("A") || movment.equals("a") || movment.equals("Action") || movment.equals("action"))
+		{
+			System.out.println("");
+		}*/
+		else
+		{
+			System.out.println("That is not a valid option");
+		}
+				
+	}
+	public void checking()
+	{
+		
+	}
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
+	}
+	
+	public boolean isFoundTreasure() {
+		return foundTreasure;
+	}
+	
+	public void setFoundTreasure(boolean foundTreasure) {
+		this.foundTreasure = foundTreasure;
+	}
+}

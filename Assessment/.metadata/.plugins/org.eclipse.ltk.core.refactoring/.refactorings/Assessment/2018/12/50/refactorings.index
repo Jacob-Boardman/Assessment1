@@ -1,0 +1,11 @@
+1544779723687	Delete element
+1544783725109	Encapsulate field 'position'
+1544784270644	Encapsulate field 'startingLocation'
+1544784277117	Encapsulate field 'setLocation'
+1544789594607	Rename local variable 'movment'
+1544791543960	Encapsulate field 'xPosition'
+1544791547935	Encapsulate field 'yPosition'
+1544791585137	Encapsulate field 'startingYLocation'
+1544791589347	Encapsulate field 'startingXLocation'
+1544791685462	Encapsulate field 'setXLocation'
+1544791688226	Encapsulate field 'setYLocation'

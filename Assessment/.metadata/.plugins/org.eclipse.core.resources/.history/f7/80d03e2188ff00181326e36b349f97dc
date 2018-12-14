@@ -1,0 +1,47 @@
+package com.qa.Assessment;
+
+import java.util.Scanner;
+
+public class Person 
+{
+	private String name;
+	private String movement;
+	private double distance;
+	private int hp;
+	private Scanner sc = new Scanner(System.in);
+	private String input;
+	private boolean foundTreasure;
+	
+	Person(String movment, int hp)
+	{
+		System.out.println("Enter your Player name");
+		this.name = sc.next();
+		this.movement = movment;
+		this.hp = hp;
+	}
+	
+	public void action(String movment)
+	{
+		if(movment.equals("n") || movment.equals("N") || movment.equals("North") || movment.equals("north"))
+		{
+			System.out.println("You have moved North");
+		}
+		else if(movment.equals("e") || movment.equals("E") || movment.equals("East") || movment.equals("east"))
+		{
+			System.out.println("You have moved East");
+		}
+		else if(movment.equals("s") || movment.equals("S") || movment.equals("South") || movment.equals("south"))
+		{
+			System.out.println("You have moved South");
+		}
+		else if(movment.equals("w") || movment.equals("w") || movment.equals("West") || movment.equals("west"))
+		{
+			System.out.println("You have moved West");
+		}
+		else
+		{
+			System.out.println("that is not a valid option");
+		}
+				
+	}
+}

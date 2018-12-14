@@ -1,0 +1,38 @@
+package com.qa.Assessment;
+
+public class Person 
+{
+	private String movement;
+	private double distance;
+	private int hp;
+	
+	Person(String movment, int hp)
+	{
+		this.movement = movment;
+		this.hp = hp;
+	}
+	
+	public void move(String movment)
+	{
+		if(movment.equals("n") || movment.equals("N") || movment.equals("North") || movment.equals("north"))
+		{
+			System.out.println("You have moved North");
+		}
+		if(movment.equals("e") || movment.equals("E") || movment.equals("East") || movment.equals("east"))
+		{
+			System.out.println("You have moved East");
+		}
+		if(movment.equals("s") || movment.equals("S") || movment.equals("South") || movment.equals("south"))
+		{
+			System.out.println("You have moved South");
+		}
+		if(movment.equals("w") || movment.equals("n") || movment.equals("West") || movment.equals("west"))
+		{
+			System.out.println("You have moved West");
+		}
+		else
+		{
+			System.out.println("that is not a valid movement option");
+		}
+	}
+}
